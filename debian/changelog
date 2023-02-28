@@ -1,0 +1,29 @@
+nvidia-graphics-drivers-510 (510.68.02-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 27 Apr 2022 12:40:54 +0300
+
+nvidia-graphics-drivers-510 (510.60.02-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 08 Apr 2022 19:13:52 +0300
+
+nvidia-graphics-drivers-510 (510.54-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 14 Feb 2022 23:20:54 +0300
+
+nvidia-graphics-drivers-510 (510.47.03-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 02 Feb 2022 01:05:20 +0300
+
+nvidia-graphics-drivers-510 (510.39.01-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 11 Jan 2022 20:04:46 +0300
