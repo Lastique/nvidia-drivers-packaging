@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-530 (530.30.02-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 28 Feb 2023 23:31:48 +0300
