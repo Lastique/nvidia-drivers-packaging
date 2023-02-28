@@ -1,0 +1,36 @@
+nvidia-graphics-drivers-455 (455.46.04-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+  * Added nvidia-ngx-updater.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 30 Dec 2020 03:41:13 +0300
+
+nvidia-graphics-drivers-455 (455.46.02-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 23 Nov 2020 22:31:26 +0300
+
+nvidia-graphics-drivers-455 (455.46.01-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 12 Nov 2020 00:11:26 +0300
+
+nvidia-graphics-drivers-455 (455.26.01-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 10 Oct 2020 23:41:53 +0300
+
+nvidia-graphics-drivers-455 (455.22.04-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 30 Sep 2020 23:48:31 +0300
+
+nvidia-graphics-drivers-455 (455.23.04-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 15 Sep 2020 20:42:21 +0300
