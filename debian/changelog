@@ -1,0 +1,41 @@
+nvidia-graphics-drivers-515 (515.49.24-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 28 Oct 2022 02:46:06 +0300
+
+nvidia-graphics-drivers-515 (515.49.19-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 08 Oct 2022 13:10:06 +0300
+
+nvidia-graphics-drivers-515 (515.49.18-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 28 Sep 2022 00:54:27 +0300
+
+nvidia-graphics-drivers-515 (515.49.15-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 22 Sep 2022 13:40:49 +0300
+
+nvidia-graphics-drivers-515 (515.49.10-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 06 Aug 2022 19:06:19 +0300
+
+nvidia-graphics-drivers-515 (515.49.06-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 06 Jul 2022 16:12:39 +0300
+
+nvidia-graphics-drivers-515 (515.49.05-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sun, 19 Jun 2022 02:48:56 +0300
