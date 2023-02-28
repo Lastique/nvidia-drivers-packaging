@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-520 (520.56.06-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 14 Oct 2022 11:44:05 +0300
