@@ -1,0 +1,18 @@
+nvidia-graphics-drivers-515 (515.65.01-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 06 Aug 2022 17:27:50 +0300
+
+nvidia-graphics-drivers-515 (515.48.07-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 01 Jun 2022 00:09:05 +0300
+
+nvidia-graphics-drivers-515 (515.43.04-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 13 May 2022 00:59:30 +0300
