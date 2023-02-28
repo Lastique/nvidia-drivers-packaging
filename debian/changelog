@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-440 (440.64-0lastique0) eoan; urgency=medium
+
+  * New upstream release 440.64.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 29 Feb 2020 02:14:02 +0300
