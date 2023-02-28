@@ -1,0 +1,29 @@
+nvidia-graphics-drivers-465 (465.31-0lastique1) hirsute; urgency=medium
+
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 22 Jun 2021 21:14:37 +0300
+
+nvidia-graphics-drivers-465 (465.31-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 18 May 2021 19:19:05 +0300
+
+nvidia-graphics-drivers-465 (465.27-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 30 Apr 2021 18:53:58 +0300
+
+nvidia-graphics-drivers-465 (465.24.02-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 15 Apr 2021 01:36:41 +0300
+
+nvidia-graphics-drivers-465 (465.19.01-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 30 Mar 2021 23:38:43 +0300
