@@ -1,0 +1,29 @@
+nvidia-graphics-drivers-450 (450.56.11-0lastique1) groovy; urgency=medium
+
+  * Added reduce-kmalloc-limit-455.38.patch.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 30 Dec 2020 19:36:21 +0300
+
+nvidia-graphics-drivers-450 (450.56.11-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 15 Sep 2020 20:42:21 +0300
+
+nvidia-graphics-drivers-450 (450.56.06-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 07 Aug 2020 23:37:54 +0300
+
+nvidia-graphics-drivers-450 (450.56.02-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 21 Jul 2020 03:09:39 +0300
+
+nvidia-graphics-drivers-450 (450.56.01-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 13 Jul 2020 21:15:11 +0300
