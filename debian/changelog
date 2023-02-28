@@ -1,0 +1,62 @@
+nvidia-graphics-drivers-470 (470.103.01-0lastique0) impish; urgency=medium
+
+  * Updated to the latest upstream release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 02 Feb 2022 01:14:55 +0300
+
+nvidia-graphics-drivers-470 (470.94-0lastique0) impish; urgency=medium
+
+  * Updated to the latest upstream release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 01 Jan 2022 15:53:30 +0300
+
+nvidia-graphics-drivers-470 (470.86-0lastique0) impish; urgency=medium
+
+  * Updated to the latest upstream release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 10 Nov 2021 22:23:52 +0300
+
+nvidia-graphics-drivers-470 (470.82.00-0lastique0) impish; urgency=medium
+
+  * Updated to the latest upstream release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 27 Oct 2021 02:51:44 +0300
+
+nvidia-graphics-drivers-470 (470.74-1lastique0) impish; urgency=medium
+
+  * Rebuilt for Ubuntu 21.10.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 23 Oct 2021 22:07:22 +0300
+
+nvidia-graphics-drivers-470 (470.74-0lastique1) hirsute; urgency=medium
+
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 16 Oct 2021 23:39:02 +0300
+
+nvidia-graphics-drivers-470 (470.74-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 20 Sep 2021 22:13:02 +0300
+
+nvidia-graphics-drivers-470 (470.63.01-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 23 Aug 2021 18:12:51 +0300
+
+nvidia-graphics-drivers-470 (470.57.02-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+  * Synchronized packaging scripts with upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 19 Jul 2021 22:33:12 +0300
+
+nvidia-graphics-drivers-470 (470.42.01-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 22 Jun 2021 22:45:48 +0300
