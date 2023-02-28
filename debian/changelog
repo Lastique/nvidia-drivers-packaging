@@ -1,0 +1,17 @@
+nvidia-graphics-drivers-440 (440.66.17-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 27 Jun 2020 19:37:54 +0300
+
+nvidia-graphics-drivers-440 (440.66.15-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 27 May 2020 23:20:52 +0300
+
+nvidia-graphics-drivers-440 (440.66.14-0lastique0) focal; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 13 May 2020 01:19:23 +0300
