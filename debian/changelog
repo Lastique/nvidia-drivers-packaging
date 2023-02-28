@@ -1,0 +1,11 @@
+nvidia-graphics-drivers-495 (495.46-0lastique0) impish; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 21 Dec 2021 01:24:58 +0300
+
+nvidia-graphics-drivers-495 (495.44-0lastique0) hirsute; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Mon, 08 Nov 2021 17:59:32 +0300
