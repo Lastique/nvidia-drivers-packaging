@@ -1,0 +1,41 @@
+nvidia-graphics-drivers-460 (460.67-0lastique1) groovy; urgency=medium
+
+  * Imported changes from the upstream packaging scripts.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 31 Mar 2021 00:27:40 +0300
+
+nvidia-graphics-drivers-460 (460.67-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 19 Mar 2021 14:40:32 +0300
+
+nvidia-graphics-drivers-460 (460.56-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 25 Feb 2021 19:44:36 +0300
+
+nvidia-graphics-drivers-460 (460.39-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 26 Jan 2021 18:11:03 +0300
+
+nvidia-graphics-drivers-460 (460.32.03-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 09 Jan 2021 16:52:58 +0300
+
+nvidia-graphics-drivers-460 (460.27.04-0lastique1) groovy; urgency=medium
+
+  * Added nvidia-ngx-updater.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 30 Dec 2020 03:22:26 +0300
+
+nvidia-graphics-drivers-460 (460.27.04-0lastique0) groovy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 17 Dec 2020 18:55:56 +0300
