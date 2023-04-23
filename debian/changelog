@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-525 (525.105.17-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sun, 23 Apr 2023 18:16:33 +0300
+
 nvidia-graphics-drivers-525 (525.89.02-0lastique0) jammy; urgency=medium
 
   * Updated to the new driver release.
