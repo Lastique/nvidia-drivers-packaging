@@ -1,2 +1,2 @@
-debian/open-kernel/dkms.conf                    usr/src/nvidia-525.47.31
-debian/open-kernel/patches/*                    usr/src/nvidia-525.47.31/patches
+debian/open-kernel/dkms.conf                    usr/src/nvidia-525.47.35
+debian/open-kernel/patches/*                    usr/src/nvidia-525.47.35/patches
