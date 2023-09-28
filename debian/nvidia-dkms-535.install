@@ -1,2 +1,2 @@
-debian/dkms.conf                    usr/src/nvidia-535.43.09
-debian/dkms_nvidia/patches/*        usr/src/nvidia-535.43.09/patches
+debian/dkms.conf                    usr/src/nvidia-535.43.10
+debian/dkms_nvidia/patches/*        usr/src/nvidia-535.43.10/patches
