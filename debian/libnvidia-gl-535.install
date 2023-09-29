@@ -17,11 +17,11 @@ NVIDIA-Linux/libnvidia-ngx.so.535.43.10                    usr/lib/x86_64-linux-
 NVIDIA-Linux/libnvidia-rtcore.so.535.43.10                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-tls.so.535.43.10                    usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-vulkan-producer.so.535.43.10        usr/lib/x86_64-linux-gnu
-NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 NVIDIA-Linux/libnvoptix.so.535.43.10                       usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/nvidia-ngx-updater                            usr/bin
 NVIDIA-Linux/nvidia_icd.json                               usr/share/vulkan/icd.d
 NVIDIA-Linux/nvidia_layers.json                            usr/share/vulkan/implicit_layer.d
+NVIDIA-Linux/nvoptix.bin                                   usr/share/nvidia
 #NVIDIA-Linux/32/libEGL_nvidia.so.535.43.10                     usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLESv1_CM_nvidia.so.535.43.10               usr/lib/x86_64-linux-gnu
 #NVIDIA-Linux/32/libGLESv2_nvidia.so.535.43.10                  usr/lib/x86_64-linux-gnu
