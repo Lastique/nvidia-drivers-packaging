@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-545 (545.29.02-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 01 Nov 2023 17:44:28 +0300
