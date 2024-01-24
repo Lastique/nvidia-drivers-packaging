@@ -1,1 +1,1 @@
-#I386_EXCLUDED#NVIDIA-Linux/firmware/gsp_*.bin        lib/firmware/nvidia/#VERSION#
+#I386_EXCLUDED#NVIDIA-Linux/firmware/gsp_*.bin        lib/firmware/nvidia/${env:NVIDIA_RELEASE}
