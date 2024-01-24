@@ -1,0 +1,10 @@
+#I386_EXCLUDED#usr/lib/${DEB_HOST_MULTIARCH}/libcudadebugger.so.${env:NVIDIA_RELEASE}        usr/lib/${DEB_HOST_MULTIARCH}/libcudadebugger.so.1
+usr/lib/${DEB_HOST_MULTIARCH}/libcuda.so.${env:NVIDIA_RELEASE}                               usr/lib/${DEB_HOST_MULTIARCH}/libcuda.so.1
+usr/lib/${DEB_HOST_MULTIARCH}/libcuda.so.1                                       usr/lib/${DEB_HOST_MULTIARCH}/libcuda.so
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ml.so.${env:NVIDIA_RELEASE}                          usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ml.so.1
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ml.so.1                                  usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ml.so
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-nvvm.so.${env:NVIDIA_RELEASE}                        usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-nvvm.so.4
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-nvvm.so.4                                usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-nvvm.so
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-opencl.so.${env:NVIDIA_RELEASE}                      usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-opencl.so.1
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ptxjitcompiler.so.${env:NVIDIA_RELEASE}              usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ptxjitcompiler.so.1
+usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ptxjitcompiler.so.1                      usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-ptxjitcompiler.so

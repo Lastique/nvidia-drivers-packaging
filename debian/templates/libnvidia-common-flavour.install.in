@@ -1,0 +1,2 @@
+#I386_EXCLUDED#NVIDIA-Linux/nvidia-application-profiles-${env:NVIDIA_RELEASE}-key-documentation        usr/share/nvidia
+#I386_EXCLUDED#NVIDIA-Linux/nvidia-application-profiles-${env:NVIDIA_RELEASE}-rc                       usr/share/nvidia
