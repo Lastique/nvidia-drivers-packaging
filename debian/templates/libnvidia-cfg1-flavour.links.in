@@ -1,0 +1,2 @@
+#I386_EXCLUDED#usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.${env:NVIDIA_RELEASE}        usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.1
+#I386_EXCLUDED#usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.1                usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so

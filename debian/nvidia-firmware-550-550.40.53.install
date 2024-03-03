@@ -1,0 +1,1 @@
+NVIDIA-Linux/firmware/gsp_*.bin        lib/firmware/nvidia/${env:NVIDIA_RELEASE}

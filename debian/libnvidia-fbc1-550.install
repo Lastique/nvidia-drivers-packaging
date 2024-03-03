@@ -1,0 +1,2 @@
+NVIDIA-Linux/libnvidia-fbc.so.${env:NVIDIA_RELEASE}        usr/lib/${DEB_HOST_MULTIARCH}
+#NVIDIA-Linux/32/libnvidia-fbc.so.${env:NVIDIA_RELEASE}         usr/lib/${DEB_HOST_MULTIARCH}

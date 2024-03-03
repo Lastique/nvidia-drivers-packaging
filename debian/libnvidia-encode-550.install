@@ -1,0 +1,2 @@
+NVIDIA-Linux/libnvidia-encode.so.${env:NVIDIA_RELEASE}        usr/lib/${DEB_HOST_MULTIARCH}
+#NVIDIA-Linux/32/libnvidia-encode.so.${env:NVIDIA_RELEASE}         usr/lib/${DEB_HOST_MULTIARCH}
