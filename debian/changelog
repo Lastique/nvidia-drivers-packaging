@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-550 (550.40.61-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 26 Apr 2024 18:15:19 +0300
+
 nvidia-graphics-drivers-550 (550.40.59-0lastique0) jammy; urgency=medium
 
   * Updated to the new driver release.
