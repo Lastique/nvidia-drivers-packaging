@@ -1,2 +1,2 @@
-usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.${env:NVIDIA_RELEASE}        usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.1
-usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so.1                usr/lib/${DEB_HOST_MULTIARCH}/libnvidia-cfg.so
+usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.550.40.63        usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.1
+usr/lib/x86_64-linux-gnu/libnvidia-cfg.so.1                usr/lib/x86_64-linux-gnu/libnvidia-cfg.so

@@ -1,2 +1,2 @@
-NVIDIA-Linux/nvidia-application-profiles-${env:NVIDIA_RELEASE}-key-documentation        usr/share/nvidia
-NVIDIA-Linux/nvidia-application-profiles-${env:NVIDIA_RELEASE}-rc                       usr/share/nvidia
+NVIDIA-Linux/nvidia-application-profiles-550.40.63-key-documentation        usr/share/nvidia
+NVIDIA-Linux/nvidia-application-profiles-550.40.63-rc                       usr/share/nvidia

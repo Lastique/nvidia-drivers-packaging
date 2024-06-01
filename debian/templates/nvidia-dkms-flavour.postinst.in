@@ -1,5 +1,5 @@
 #!/bin/sh
-# postinst script for nvidia-dkms-535
+# postinst script for nvidia-dkms-550
 #
 # see: dh_installdeb(1)
 #
@@ -20,6 +20,9 @@ case $ARCH in
         ;;
     i386)
         ARCH="i686"
+        ;;
+    armhf)
+        ARCH="armhf"
         ;;
     *)
         echo "WARNING: unsupported arch: $ARCH"
