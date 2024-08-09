@@ -1,3 +1,10 @@
+nvidia-graphics-drivers-550 (550.40.67-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+  * Updated packaging scripts from upstream.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 09 Aug 2024 15:28:22 +0300
+
 nvidia-graphics-drivers-550 (550.40.65-0lastique0) jammy; urgency=medium
 
   * Updated to the new driver release.
