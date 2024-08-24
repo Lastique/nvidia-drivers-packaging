@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-560 (560.35.03-0lastique0) jammy; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Sat, 24 Aug 2024 20:12:45 +0300
