@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-565 (565.57.01-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 12 Nov 2024 18:10:47 +0300
