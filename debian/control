@@ -33,10 +33,10 @@ Package: nvidia-driver-565
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-565 (= ${binary:Version}),
- nvidia-dkms-565 (<= 565.57.01-1),
- nvidia-dkms-565 (>= 565.57.01),
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
+ nvidia-dkms-565 (<= 565.77-1),
+ nvidia-dkms-565 (>= 565.77),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
  nvidia-kernel-source-565 (= ${binary:Version}),
  libnvidia-compute-565 (= ${binary:Version}),
  libnvidia-extra-565 (= ${binary:Version}),
@@ -93,11 +93,11 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-565 (<= 565.57.01-1),
- nvidia-kernel-source-565 (>= 565.57.01),
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
- nvidia-firmware-565-565.57.01,
+ nvidia-kernel-source-565 (<= 565.77-1),
+ nvidia-kernel-source-565 (>= 565.77),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
+ nvidia-firmware-565-565.77,
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package
  This package builds the NVIDIA kernel module needed by the userspace
@@ -181,8 +181,8 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
  nvidia-kernel-source-565 (= ${binary:Version}),
  libnvidia-compute-565 (= ${binary:Version}),
  nvidia-compute-utils-565 (= ${binary:Version}),
@@ -219,7 +219,7 @@ Architecture: amd64 arm64
 Conflicts: nvidia-kernel-common
 Provides: nvidia-kernel-common
 Depends:
- ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-565-565.57.01
+ ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-565-565.77
 Replaces:
  nvidia-dkms-565 (<< 390.48-0ubuntu3~), nvidia-kernel-common
 Description: Shared files used with the kernel module
@@ -230,12 +230,12 @@ Description: Shared files used with the kernel module
  modules, and if you want udev to load the the NVIDIA kernel modules,
  and to create the uvm devices automatically.
 
-Package: nvidia-firmware-565-565.57.01
+Package: nvidia-firmware-565-565.77
 Architecture: amd64 arm64
 Breaks:
- nvidia-firmware-565-server-565.57.01
+ nvidia-firmware-565-server-565.77
 Replaces:
- nvidia-firmware-565-server-565.57.01
+ nvidia-firmware-565-server-565.77
 Depends:
  ${misc:Depends}
 Description: Firmware files used by the kernel module
@@ -386,10 +386,10 @@ Package: nvidia-driver-565-open
 Architecture: amd64 arm64
 Depends:
  libnvidia-gl-565 (= ${binary:Version}),
- nvidia-dkms-565-open (<= 565.57.01-1),
- nvidia-dkms-565-open (>= 565.57.01),
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
+ nvidia-dkms-565-open (<= 565.77-1),
+ nvidia-dkms-565-open (>= 565.77),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
  nvidia-kernel-source-565-open (= ${binary:Version}),
  libnvidia-compute-565 (= ${binary:Version}),
  libnvidia-extra-565 (= ${binary:Version}),
@@ -446,10 +446,10 @@ Provides:
  nvidia-dkms-kernel
 Depends:
  dkms,
- nvidia-kernel-source-565-open (<= 565.57.01-1),
- nvidia-kernel-source-565-open (>= 565.57.01),
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
+ nvidia-kernel-source-565-open (<= 565.77-1),
+ nvidia-kernel-source-565-open (>= 565.77),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
  ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA DKMS package (open kernel module)
  This package builds the open NVIDIA kernel module needed by the userspace
@@ -464,8 +464,8 @@ Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides: nvidia-384
 Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
- nvidia-kernel-common-565 (<= 565.57.01-1),
- nvidia-kernel-common-565 (>= 565.57.01),
+ nvidia-kernel-common-565 (<= 565.77-1),
+ nvidia-kernel-common-565 (>= 565.77),
  nvidia-kernel-source-565-open (= ${binary:Version}),
  libnvidia-compute-565 (= ${binary:Version}),
  nvidia-compute-utils-565 (= ${binary:Version}),
