@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-575 (575.51.02-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 17 Apr 2025 01:22:12 +0300
