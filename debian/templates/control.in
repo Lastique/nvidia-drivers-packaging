@@ -57,6 +57,7 @@ Recommends:
  libnvidia-gl-#FLAVOUR#:i386 (= ${binary:Version}) [amd64]
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
+XB-Prefer-Variant: Open
 XB-Support: PB
 Description: NVIDIA driver metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,
@@ -136,8 +137,8 @@ Provides: libnvidia-compute, nvidia-opencl-icd, opencl-icd, libnvidia-ml.so.1 (=
  libcuda-11.7-1, libcuda-11.8-1, libcuda-12.0-1, libcuda-12.1-1,
  libcuda-12.2-1, libcuda-12.3-1, libcuda-12.4-1, libcuda-12.5-1,
  libcuda-12.6-1, libcuda-12.7-1, libcuda-12.8-1,
- libcuda1 (= ${source:Version}),
- libcuda.so.1 (= ${source:Version})
+ libcuda.so.1 (= ${source:Version}),
+ libcuda1 (= ${source:Version})
 Conflicts: libnvidia-compute, nvidia-opencl-icd,
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
  libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1,
@@ -415,6 +416,7 @@ Recommends:
  libnvidia-gl-#FLAVOUR#:i386 (= ${binary:Version}) [amd64]
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
+XB-Prefer-Variant: Open
 XB-Support: PB
 Description: NVIDIA driver (open kernel) metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,

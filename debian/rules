@@ -11,7 +11,7 @@ include debian/rules.defs
 XORG_ABI_LIST		?=
 XORG_BOUND		?=
 
-version			 = $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//')
+version			= $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//')
 debian_version	= $(shell echo $(DEB_VERSION_UPSTREAM) | sed -e's/.*\+really\.//')
 NVIDIA_RELEASE   = $(version)
 version_major		 = $(firstword $(subst ., ,$(version)))
@@ -19,7 +19,7 @@ version_major		 = $(firstword $(subst ., ,$(version)))
 # system libdir
 libdir			?= usr/lib/$(DEB_HOST_MULTIARCH)
 
-last_suffix		:= $(lastword $(subst -, ,$(DEB_SOURCE)))
+last_suffix            := $(lastword $(subst -, ,$(DEB_SOURCE)))
 ifeq ($(last_suffix),server)
 flavour := $(version_major)-server
 other_flavour := $(version_major)
@@ -162,19 +162,14 @@ ifeq (,$(findstring nvidia-uvm,$(DKMS_disabled_modules)))
 	cat $(CURDIR)/debian/dkms.conf.fragment >> $(CURDIR)/debian/open-kernel/dkms.conf
 endif
 
-ifeq ($(DEB_HOST_ARCH),ppc64el)
-	# POWER 9 seems to need this
-	sed -i 's/--user nvidia-persistenced --no-persistence-mode/--user root --persistence-mode/' \
-		 $(CURDIR)/debian/nvidia-compute-utils-$(flavour).nvidia-persistenced.service
-endif
-
-	dh_install -p nvidia-compute-utils-$(flavour)
-	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(flavour)/lib/systemd
+	dh_install -p nvidia-compute-utils-$(version_major)
+	mkdir -p $(CURDIR)/debian/nvidia-compute-utils-$(version_major)/lib/systemd
 	dh_installsystemd --name=nvidia-persistenced --no-start --no-stop-on-upgrade --no-restart-after-upgrade
-	dh_install -p nvidia-kernel-common-$(flavour)
+	dh_install -p nvidia-kernel-common-$(version_major)
 
 	mkdir -p $(CURDIR)/debian/nvidia-kernel-common-$(version_major)/lib/systemd
 	dh_installsystemd --name=nvidia-hibernate --no-start --no-stop-on-upgrade --no-restart-after-upgrade
+	dh_installsystemd --name=nvidia-powerd --no-start --no-stop-on-upgrade --no-restart-after-upgrade
 	dh_installsystemd --name=nvidia-resume --no-start --no-stop-on-upgrade --no-restart-after-upgrade
 	dh_installsystemd --name=nvidia-suspend --no-start --no-stop-on-upgrade --no-restart-after-upgrade
 
@@ -185,20 +180,6 @@ override_dh_installinit:
 
 override_dh_shlibdeps:
 	LD_LIBRARY_PATH=/$(libdir):$(LD_LIBRARY_PATH) dh_shlibdeps -Xlibnvidia-pkcs11.so
-
-# Do not run dh_strip here.  The NVIDIA license says:
-#
-#     2.1.2 Linux/FreeBSD Exception.  Notwithstanding the foregoing terms of
-#     Section 2.1.1, SOFTWARE designed exclusively for use on the Linux or
-#     FreeBSD operating systems, or other operating systems derived from the
-#     source code to these operating systems, may be copied and
-#     redistributed, provided that the binary files thereof are not modified
-#     in any way (except for unzipping of compressed files).
-#
-# Stripping the binary modules would constitute modifying the binary files
-# in a way other than unzipping of compressed files.
-override_dh_strip:
-override_dh_strip_nondeterminism:
 
 override_dh_installsystemd:
 
@@ -245,21 +226,15 @@ regen-from-templates:
 ############################################################################
 
 CACHE			?= ../.cache
-ORIGDIR			?= nvidia-graphics-drivers-$(flavour).orig
-TARBALL_BASE		?= nvidia-graphics-drivers-$(flavour)_$(NVIDIA_RELEASE).orig
+ORIGDIR			?= nvidia-graphics-drivers-$(version_major).orig
+TARBALL_BASE		?= nvidia-graphics-drivers-$(version_major)_$(NVIDIA_RELEASE).orig
 TARBALL_SUFFIX		?= .tar.gz
 TARBALL			?= $(TARBALL_BASE)$(TARBALL_SUFFIX)
 ORIGDIR.empty		?= $(ORIGDIR)
 TARBALL.empty		?= $(TARBALL)
 
 # $1 = arch
-ifneq (,$(findstring -server,$(flavour)))
-    # Found
-get_download_url	 = $(HTTPURL_PREFIX_tesla)/$(NVIDIA_RELEASE)/$(NVIDIA_FILENAME_$(strip $1))
-else
 get_download_url	 = $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(HTTPURL_ARCHDIR_$(strip $1))/$(NVIDIA_RELEASE)/$(NVIDIA_FILENAME_$(strip $1))
-endif
-
 get_kern_download_url	= $(or $(HTTPURL_PREFIX_$(strip $1)),$(HTTPURL_PREFIX))/$(NVIDIA_FILENAME_$(strip $1))
 get_origdir		 = $(or $(ORIGDIR.$(strip $1)),$(ORIGDIR)-$(strip $1))
 get_tarball		 = $(or $(TARBALL.$(strip $1)),$(TARBALL_BASE)-$(strip $1)$(TARBALL_SUFFIX))

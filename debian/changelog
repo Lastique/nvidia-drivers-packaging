@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-570 (570.133.07-0lastique1) noble; urgency=medium
+
+  * Applied changes from upstream driver packaging scripts.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 17 Apr 2025 01:19:26 +0300
+
 nvidia-graphics-drivers-570 (570.133.07-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
