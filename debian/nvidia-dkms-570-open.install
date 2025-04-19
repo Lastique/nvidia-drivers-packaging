@@ -1,2 +1,2 @@
-debian/open-kernel/dkms.conf                    usr/src/nvidia-570.123.07
-debian/open-kernel/patches/*                    usr/src/nvidia-570.123.07/patches
+debian/open-kernel/dkms.conf                    usr/src/nvidia-570.123.10
+debian/open-kernel/patches/*                    usr/src/nvidia-570.123.10/patches
