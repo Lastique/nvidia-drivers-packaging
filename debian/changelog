@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-570 (570.123.18-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 12 Jun 2025 01:40:09 +0300
+
 nvidia-graphics-drivers-570 (570.123.14-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
