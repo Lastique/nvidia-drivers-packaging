@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-575 (575.64.03-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 08 Jul 2025 13:52:47 +0300
+
 nvidia-graphics-drivers-575 (575.64-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
