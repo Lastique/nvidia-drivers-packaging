@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-580 (580.94.06-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 04 Nov 2025 02:47:29 +0300
+
 nvidia-graphics-drivers-580 (580.94.03-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
