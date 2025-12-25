@@ -58,7 +58,7 @@ Recommends:
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
 XB-Prefer-Variant: Open
-XB-Support: PB
+XB-Support: LTSB
 Description: NVIDIA driver metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,
  to provide hardware acceleration for OpenGL/GLX/EGL/GLES/Vulkan
@@ -72,8 +72,6 @@ Architecture: amd64 arm64
 Multi-Arch: foreign
 Conflicts:
  nvidia-kernel-source
-Replaces:
- nvidia-kernel-source, nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Provides:
  nvidia-kernel-source
 Depends:
@@ -87,9 +85,8 @@ Architecture: amd64 arm64
 Multi-Arch: foreign
 Conflicts:
  nvidia-dkms-kernel
-Breaks: nvidia-kernel-source-#FLAVOUR# (<< 390.25-0ubuntu2~)
 Replaces:
- nvidia-dkms-kernel, nvidia-kernel-source-#FLAVOUR# (<< 390.25-0ubuntu2~), nvidia-384 (<< 390.25)
+ nvidia-dkms-kernel
 Provides:
  nvidia-dkms-kernel
 Depends:
@@ -110,6 +107,7 @@ Description: NVIDIA DKMS package
 Package: nvidia-utils-#FLAVOUR#
 Architecture: amd64 arm64
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION#,
  ${shlibs:Depends}, ${misc:Depends}
 Suggests:
  nvidia-driver-#FLAVOUR#,
@@ -126,7 +124,9 @@ Package: libnvidia-compute-#FLAVOUR#
 Architecture: i386 amd64 arm64
 Multi-Arch: same
 Depends:
-  ocl-icd-libopencl1, ${misc:Depends}, ${shlibs:Depends}
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
+ ocl-icd-libopencl1,
+ ${misc:Depends}, ${shlibs:Depends}
 Provides: libnvidia-compute, nvidia-opencl-icd, opencl-icd, libnvidia-ml.so.1 (= ${source:Version}),
  libnvidia-ml1 (= ${source:Version}),
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
@@ -148,7 +148,7 @@ Conflicts: libnvidia-compute, nvidia-opencl-icd,
  libcuda-11.7-1, libcuda-11.8-1, libcuda-12.0-1, libcuda-12.1-1,
  libcuda-12.2-1, libcuda-12.3-1, libcuda-12.4-1, libcuda-12.5-1,
  libcuda-12.6-1, libcuda-12.7-1, libcuda-12.8-1
-Replaces: libnvidia-compute, nvidia-opencl-icd, libnvidia-compute-#FLAVOUR# (<< 390.25-0ubuntu2~),
+Replaces: libnvidia-compute, nvidia-opencl-icd,
  libcuda-5.0-1, libcuda-5.5-1, libcuda-6.0-1, libcuda-6.5-1,
  libcuda-7.0-1, libcuda-7.5-1, libcuda-8.0-1, libcuda-9.0-1,
  libcuda-9.1-1, libcuda-9.2-1, libcuda-10.0-1, libcuda-10.1-1,
@@ -183,9 +183,6 @@ Description: NVIDIA compute utilities
 
 Package: nvidia-headless-no-dkms-#FLAVOUR#
 Architecture: amd64 arm64
-Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
-Provides: nvidia-384
-Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
  nvidia-kernel-common-#FLAVOUR# (<= #DEBIAN_VERSION#-1),
  nvidia-kernel-common-#FLAVOUR# (>= #DEBIAN_VERSION#),
@@ -223,11 +220,13 @@ Description: NVIDIA headless metapackage
 Package: nvidia-kernel-common-#FLAVOUR#
 Architecture: amd64 arm64
 Conflicts: nvidia-kernel-common
-Provides: nvidia-kernel-common
+Provides:
+ nvidia-kernel-common,
+ nvidia-kernel-common-#FLAVOUR#-#VERSION#
 Depends:
  ${misc:Depends}, ${shlibs:Depends}, nvidia-firmware-#FLAVOUR#-#VERSION#
 Replaces:
- nvidia-dkms-#FLAVOUR# (<< 390.48-0ubuntu3~), nvidia-kernel-common
+ nvidia-kernel-common
 Description: Shared files used with the kernel module
  This package installs all the optional accessory files for the NVIDIA
  kernel module.
@@ -252,10 +251,13 @@ Package: libnvidia-gl-#FLAVOUR#
 Architecture: i386 amd64 arm64
 Multi-Arch: same
 Conflicts: libnvidia-gl, libnvidia-egl-gbm1
-Replaces: libnvidia-gl, nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
+Replaces: libnvidia-gl
 Provides: libnvidia-gl, libglx-vendor, libegl-vendor
 Depends:
- libnvidia-common-#FLAVOUR#,  libnvidia-egl-wayland1, ${misc:Depends}, ${shlibs:Depends}
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
+ libnvidia-common-#FLAVOUR#,
+ libnvidia-egl-wayland1,
+ ${misc:Depends}, ${shlibs:Depends}
 Description: NVIDIA OpenGL/GLX/EGL/GLES GLVND libraries and Vulkan ICD
  This package provides the NVIDIA OpenGL/GLX/EGL/GLES libraries and the
  Vulkan ICD.
@@ -263,11 +265,11 @@ Description: NVIDIA OpenGL/GLX/EGL/GLES GLVND libraries and Vulkan ICD
 Package: libnvidia-common-#FLAVOUR#
 Architecture: all
 Multi-Arch: foreign
-Breaks: libnvidia-gl-#FLAVOUR# (<< 390.25-0ubuntu2~)
 Conflicts: libnvidia-common
-Replaces: libnvidia-common, libnvidia-gl-#FLAVOUR# (<< 390.25-0ubuntu2~)
+Replaces: libnvidia-common
 Provides: libnvidia-common
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION#,
  ${misc:Depends}, ${shlibs:Depends}
 Description: Shared files used by the NVIDIA libraries
  This package provides a set of files that are required by the NVIDIA
@@ -281,6 +283,7 @@ Conflicts: libnvidia-extra
 Replaces: libnvidia-extra, libnvidia-common-#FLAVOUR# (<< 440.64-0ubuntu3~)
 Provides: libnvidia-extra
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
  ${misc:Depends}, ${shlibs:Depends}
 Description: Extra libraries for the NVIDIA driver
  This package provides an additional set of libraries to be used with
@@ -312,6 +315,7 @@ Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends}
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION#,
  ${shlibs:Depends}, ${misc:Depends}
 Provides:
  libnvidia-cfg1-any,
@@ -332,7 +336,7 @@ Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends}
 Depends:
-# ${nvidia}-alternative (= ${binary:Version}),
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
  ${shlibs:Depends}, ${misc:Depends}
 Provides:
  libnvidia-fbc1,
@@ -354,6 +358,7 @@ Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends}
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
  libnvidia-compute-#FLAVOUR# (= ${binary:Version}),
  ${shlibs:Depends}, ${misc:Depends}
 Conflicts:
@@ -375,6 +380,7 @@ Multi-Arch: same
 Pre-Depends:
  ${misc:Pre-Depends}
 Depends:
+ nvidia-kernel-common-#FLAVOUR#-#VERSION# [!i386],
  ${shlibs:Depends}, ${misc:Depends}
 Conflicts:
  libnvidia-encode,
@@ -417,7 +423,7 @@ Recommends:
 XB-Modaliases: ${modaliases}
 XB-PmAliases: ${nvidia:pm-modaliases}
 XB-Prefer-Variant: Open
-XB-Support: PB
+XB-Support: LTSB
 Description: NVIDIA driver (open kernel) metapackage
  This metapackage depends on the NVIDIA binary driver and on all of its libraries,
  to provide hardware acceleration for OpenGL/GLX/EGL/GLES/Vulkan
@@ -432,7 +438,7 @@ Multi-Arch: foreign
 Conflicts:
  nvidia-kernel-source
 Replaces:
- nvidia-kernel-source, nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
+ nvidia-kernel-source
 Provides:
  nvidia-kernel-source
 Depends:
@@ -446,9 +452,8 @@ Architecture: amd64 arm64
 Multi-Arch: foreign
 Conflicts:
  nvidia-dkms-kernel
-Breaks: nvidia-kernel-source-#FLAVOUR# (<< 390.25-0ubuntu2~)
 Replaces:
- nvidia-dkms-kernel, nvidia-kernel-source-#FLAVOUR# (<< 390.25-0ubuntu2~), nvidia-384 (<< 390.25)
+ nvidia-dkms-kernel
 Provides:
  nvidia-dkms-kernel
 Depends:
@@ -467,9 +472,6 @@ Description: NVIDIA DKMS package (open kernel module)
 
 Package: nvidia-headless-no-dkms-#FLAVOUR#-open
 Architecture: amd64 arm64
-Conflicts: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
-Provides: nvidia-384
-Replaces: nvidia-384 (<< 390.25), nvidia-390 (<< 390.25-0ubuntu1)
 Depends:
  nvidia-kernel-common-#FLAVOUR# (<= #DEBIAN_VERSION#-1),
  nvidia-kernel-common-#FLAVOUR# (>= #DEBIAN_VERSION#),
