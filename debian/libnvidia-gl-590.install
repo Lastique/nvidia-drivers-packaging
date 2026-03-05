@@ -4,7 +4,6 @@ NVIDIA-Linux/nvngx_dlssg.dll                                  usr/lib/x86_64-lin
 NVIDIA-Linux/nvidia-pcc                                       usr/bin
 NVIDIA-Linux/libnvidia-vksc-core.so.590.48.01                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/nvidia_icd_vksc.json                             usr/share/vulkansc/icd.d
-NVIDIA-Linux/libnvidia-present.so.590.48.01                   usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/10_nvidia.json                                usr/share/glvnd/egl_vendor.d
 NVIDIA-Linux/15_nvidia_gbm.json                            usr/share/egl/egl_external_platform.d
 NVIDIA-Linux/20_nvidia_xlib.json                           usr/share/egl/egl_external_platform.d
@@ -23,6 +22,7 @@ NVIDIA-Linux/libnvidia-glsi.so.590.48.01                   usr/lib/x86_64-linux-
 NVIDIA-Linux/libnvidia-glvkspirv.so.590.48.01              usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-gpucomp.so.590.48.01                usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-ngx.so.590.48.01                    usr/lib/x86_64-linux-gnu
+NVIDIA-Linux/libnvidia-present.so.590.48.01                usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-rtcore.so.590.48.01                 usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-tls.so.590.48.01                    usr/lib/x86_64-linux-gnu
 NVIDIA-Linux/libnvidia-egl-xcb.so.1.0.4                    usr/lib/x86_64-linux-gnu
