@@ -1,7 +1,8 @@
-diff --color -Naur a/NVIDIA-Linux/systemd/system/nvidia-powerd.service b/NVIDIA-Linux/systemd/system/nvidia-powerd.service
---- a/NVIDIA-Linux/systemd/system/nvidia-powerd.service	2025-05-21 10:20:39.230480964 +0200
-+++ b/NVIDIA-Linux/systemd/system/nvidia-powerd.service	2025-05-21 18:12:01.910958498 +0200
-@@ -8,6 +8,7 @@
+diff --git a/NVIDIA-Linux/systemd/system/nvidia-powerd.service b/NVIDIA-Linux/systemd/system/nvidia-powerd.service
+index 9f22984..ad88a9a 100644
+--- a/NVIDIA-Linux/systemd/system/nvidia-powerd.service
++++ b/NVIDIA-Linux/systemd/system/nvidia-powerd.service
+@@ -8,6 +8,7 @@ Type=simple
  ExecStart=/usr/bin/nvidia-powerd
  Restart=on-abort
  RestartSec=10
@@ -9,4 +10,3 @@ diff --color -Naur a/NVIDIA-Linux/systemd/system/nvidia-powerd.service b/NVIDIA-
  
  [Install]
  WantedBy=multi-user.target
-\ No newline at end of file
