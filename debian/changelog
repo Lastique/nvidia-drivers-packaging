@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-610 (610.43.02-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Wed, 27 May 2026 00:03:58 +0300
