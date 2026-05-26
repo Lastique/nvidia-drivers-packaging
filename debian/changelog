@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-595 (595.71.05-0lastique1) noble; urgency=medium
+
+  * Package pahole.sh in the kernel module sources.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Tue, 26 May 2026 23:44:03 +0300
+
 nvidia-graphics-drivers-595 (595.71.05-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
