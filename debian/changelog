@@ -1,3 +1,9 @@
+nvidia-graphics-drivers-595 (595.44.13-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 07 Aug 2026 02:09:43 +0300
+
 nvidia-graphics-drivers-595 (595.44.11-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
