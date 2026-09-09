@@ -1,0 +1,5 @@
+nvidia-graphics-drivers-615 (615.71.09-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 10 Sep 2026 00:06:13 +0300
