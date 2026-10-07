@@ -1,3 +1,11 @@
+nvidia-graphics-drivers-615 (615.78.08-0lastique0) noble; urgency=medium
+
+  * Updated to the new driver release.
+  * Updated packaging scripts from upstream. The non-open kernel module packages
+    wer converted to transitional packages.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Thu, 08 Oct 2026 01:19:04 +0300
+
 nvidia-graphics-drivers-615 (615.71.09-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.

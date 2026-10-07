@@ -140,7 +140,6 @@ override_dh_auto_clean:
 	rm -f LICENSE.txt LICENSE.tmp copyright.tmp
 	test ! -d debian/po || debconf-updatepo
 	rm -f debian/$(pkg_driver).substvars
-	rm -f debian/dkms.conf
 	rm -f debian/device-create/ub-device-create
 
 override_dh_clean: regen-from-templates
@@ -153,12 +152,10 @@ override_dh_compress:
 
 override_dh_install: generate-modaliases build-device-create
 	# Use our custom dkms.conf file
-	cp -f $(CURDIR)/debian/dkms_nvidia.conf $(CURDIR)/debian/dkms.conf
 	cp -f $(CURDIR)/debian/dkms_nvidia_open.conf $(CURDIR)/debian/open-kernel/dkms.conf
 
 ifeq (,$(findstring nvidia-uvm,$(DKMS_disabled_modules)))
 	# Make sure the UVM module is built
-	cat $(CURDIR)/debian/dkms.conf.fragment >> $(CURDIR)/debian/dkms.conf
 	cat $(CURDIR)/debian/dkms.conf.fragment >> $(CURDIR)/debian/open-kernel/dkms.conf
 endif
 
@@ -254,13 +251,7 @@ override_dh_gencontrol: generate-runtimepm-aliases
 
 generate-modaliases:
 	# Generate modaliases for the restricted drivers manager
-	mkdir -p $(CURDIR)/debian/$(pkg_meta)-modaliases/usr/share/jockey/modaliases/
 	mkdir -p $(CURDIR)/debian/$(pkg_meta_open)-modaliases/usr/share/jockey/modaliases/
-	python3 $(CURDIR)/debian/nvidia_supported \
-		$(pkg_module) $(pkg_meta) \
-		NVIDIA-Linux/supported-gpus/supported-gpus.json \
-		> $(CURDIR)/debian/$(pkg_meta).modaliases
-
 	python3 $(CURDIR)/debian/nvidia_supported \
 		$(pkg_module) $(pkg_meta_open) \
 		NVIDIA-Linux/supported-gpus/supported-gpus.json --open \
@@ -272,18 +263,10 @@ generate-modaliases:
 		echo $$line | grep -Eq '^#.*' && continue; \
 		for id in $$line; do \
 			printf 'alias pci:v%08Xd%08Xsv*sd*bc03sc*i* %s %s\n' \
-				0x10de "0x$$id" "$(pkg_module)" "$(pkg_meta)"; \
-		done; \
-	done < $(CURDIR)/debian/additional_card_ids >>$(CURDIR)/debian/$(pkg_meta).modaliases
-	while read line; do \
-		echo $$line | grep -Eq '^#.*' && continue; \
-		for id in $$line; do \
-			printf 'alias pci:v%08Xd%08Xsv*sd*bc03sc*i* %s %s\n' \
 				0x10de "0x$$id" "$(pkg_module)" "$(pkg_meta_open)"; \
 		done; \
 	done < $(CURDIR)/debian/additional_card_ids_open >>$(CURDIR)/debian/$(pkg_meta_open).modaliases
 	dh_modaliases
-	rm -f $(CURDIR)/debian/$(pkg_meta).modaliases
 	rm -f $(CURDIR)/debian/$(pkg_meta_open).modaliases
 
 get-orig-source-prepare:
