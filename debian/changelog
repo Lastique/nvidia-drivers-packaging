@@ -1,3 +1,10 @@
+nvidia-graphics-drivers-615 (615.78.08-0lastique1) resolute; urgency=medium
+
+  * Added DKMS patches from upstream for compatibility with Linux kernel
+    from Ubuntu 26.04.
+
+ -- Andrey Semashev <andrey.semashev@gmail.com>  Fri, 30 Oct 2026 01:02:14 +0300
+
 nvidia-graphics-drivers-615 (615.78.08-0lastique0) noble; urgency=medium
 
   * Updated to the new driver release.
